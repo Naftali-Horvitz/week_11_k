@@ -57,3 +57,4 @@ kubectl apply -f  .\week_11_k    להרים את היימלים שקיימים �
 kubectl get pods בדיקה שהפוד רץ
 kubectl get services בדיקה שהסרוויס רץ
 minikube service app-service הפעלה של הסרוויס 
+ kubectl logs app-pod צפיה בלוגים
