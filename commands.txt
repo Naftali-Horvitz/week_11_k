@@ -58,3 +58,5 @@ kubectl get pods בדיקה שהפוד רץ
 kubectl get services בדיקה שהסרוויס רץ
 minikube service app-service הפעלה של הסרוויס 
  kubectl logs app-pod צפיה בלוגים
+
+ minikube logs מידע מפורט
