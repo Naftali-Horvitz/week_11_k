@@ -1,0 +1,26 @@
+
+1.
+הרצתי את הקוברנטיס על המחשב ובדקתי סטטוס
+minikube start
+minikube satus
+
+2. 
+יצרתי קובץ דוקר שממנו התמונה תבנה
+בניתי את התמונה והעליתי לדוקר האב
+הרצתי קונטיינר כדי לוודא שהכל עובד
+
+
+docker build -t naftali96/app-week-11:v7 .
+docker push naftali96/app-week-11:v7
+docker run -p 8080:8080  naftali96/app-week-11:v7
+
+3.
+בניתי את קבצי ה yaml 
+אחד לפוד ואחד לסרוויס 
+הפוד לאפליקציה והסרוויס לניהול בפוד
+
+4.
+kubectl apply -f  .\week_11    להרים את היימלים שקיימים בתקיה
+kubectl get pods בדיקה שהפוד רץ
+kubectl get services בדיקה שהסרוויס רץ
+minikube service app-service הפעלה של הסרוויס 
