@@ -1,3 +1,7 @@
+0.
+git clone https://github.com/Naftali-Horvitz/week_11_k.git
+git commit -m 'add file commands"
+git push
 
 1.
 הרצתי את הקוברנטיס על המחשב ובדקתי סטטוס
@@ -10,6 +14,16 @@ minikube satus
 הרצתי קונטיינר כדי לוודא שהכל עובד
 
 
+
+git checkout -b dockerfile
+git status
+git add .
+git commit -m "add docker file and md file"
+git push
+git checkout main
+git merge dockerfile
+
+
 docker build -t naftali96/app-week-11:v7 .
 docker push naftali96/app-week-11:v7
 docker run -p 8080:8080  naftali96/app-week-11:v7
@@ -19,8 +33,30 @@ docker run -p 8080:8080  naftali96/app-week-11:v7
 אחד לפוד ואחד לסרוויס 
 הפוד לאפליקציה והסרוויס לניהול בפוד
 
+git checkout -b pod-yaml
+git status
+git add .
+git commit -m "add pod yaml file and md"
+git push
+git checkout main
+git merge pod-yaml
+
+git checkout -b service-yaml
+git status
+git add .
+git commit -m "add service yaml file and md"
+git push
+git checkout main
+git merge service-yaml
+
+
+
+
 4.
-kubectl apply -f  .\week_11    להרים את היימלים שקיימים בתקיה
+kubectl apply -f  .\week_11_k    להרים את היימלים שקיימים בתקיה
 kubectl get pods בדיקה שהפוד רץ
 kubectl get services בדיקה שהסרוויס רץ
 minikube service app-service הפעלה של הסרוויס 
+ kubectl logs app-pod צפיה בלוגים
+
+ minikube logs app-pod מידע מפורט

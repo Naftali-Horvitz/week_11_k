@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: app-pod
+  labels:
+    app: app-pod
+spec:
+  containers:
+      - name: app-pod
+        image: naftali96/app-week-11:v7
+        ports:
+        - containerPort: 8080
